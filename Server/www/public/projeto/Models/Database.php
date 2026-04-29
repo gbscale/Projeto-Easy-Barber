@@ -16,20 +16,19 @@ class Database{
   const NAME = 'projeto';
 
   # Usuário do banco
-  const USER = 'root';
+  const USER = 'aluno';
 
   # Senha de acesso ao banco de dados
-  const PASS = 'root';
+  const PASS = '123456';
 
-    # Senha de acesso ao banco de dados
-    const PORT = '3306';
-
+  # Senha de acesso ao banco de dados
+  const PORT = '3306';
 
   # Nome da tabela a ser manipulada
   private ?string $table;
 
- # Instancia de conexão com o banco de dados
- private PDO $connection;
+  # Instancia de conexão com o banco de dados
+  private PDO $connection;
 
   # Define a tabela e instancia e conexão
   public function __construct(?string $table = null){
@@ -40,21 +39,21 @@ class Database{
   # Método responsável por criar uma conexão com o banco de dados
   private function setConnection(){
     try{
-      $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME.';port='.self::PORT,self::USER,self::PASS);
-      $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    }catch(PDOException $e){
-      throw $e;
+        $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME.';port='.self::PORT,self::USER,self::PASS);
+        $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $e){
+        throw $e;
     }
   }
 
   # Método responsável por executar queries dentro do banco de dados
   public function execute($query,$params = []){
     try{
-      $statement = $this->connection->prepare($query);
-      $statement->execute($params);
-      return $statement;
-    }catch(PDOException $e){
-      throw $e;
+        $statement = $this->connection->prepare($query);
+        $statement->execute($params);
+        return $statement;
+    } catch(PDOException $e){
+        throw $e;
     }
   }
   

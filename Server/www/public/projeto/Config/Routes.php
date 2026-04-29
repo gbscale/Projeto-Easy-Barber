@@ -18,5 +18,23 @@ return [
     '/projeto/cidades/edit_save' => ['Cidades', 'edit_save'],
     '/projeto/cidades/search' => ['Cidades', 'search'],
     '/sobre' => ['HomeController', 'sobre'],
+
+    '/projeto/categorias' => ['Categorias', 'index'],
+    '/projeto/categorias/new' => ['Categorias', 'new'],
+    '/projeto/categorias/index' => ['Categorias', 'index'],
+    '/projeto/categorias/edit/{id}' => ['Categorias', 'edit'],
+    '/projeto/categorias/delete/{id}' => ['Categorias', 'delete'],
+    '/projeto/categorias/save' => ['Categorias', 'save'],
+    '/projeto/categorias/edit_save' => ['Categorias', 'edit_save'],
+    '/projeto/categorias/search' => ['Categorias', 'search'],
+
+    '/projeto/usuarios' => ['Usuarios', 'index'],
+    '/projeto/usuarios/new' => ['Usuarios', 'new'],
+    '/projeto/usuarios/index' => ['Usuarios', 'index'],
+    '/projeto/usuarios/edit/{id}' => ['Usuarios', 'edit'],
+    '/projeto/usuarios/delete/{id}' => ['Usuarios', 'delete'],
+    '/projeto/usuarios/save' => ['Usuarios', 'save'],
+    '/projeto/usuarios/edit_save' => ['Usuarios', 'edit_save'],
+    '/projeto/usuarios/search' => ['Usuarios', 'search'],
 ];
 

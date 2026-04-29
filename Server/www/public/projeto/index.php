@@ -10,6 +10,7 @@ $nivel = NULL;
 include_once 'Config/Helpers.php';
 include_once 'Autoloader.php';
 include('Views/templates/header.php');
+
 echo accessNavigate($nivel);
 
 // Carrega as rotas
@@ -64,3 +65,4 @@ if ($handler) {
 include('Views/templates/footer.php');
 include('Views/templates/end.php');
 ob_end_flush(); // <- Libera o conteúdo do buffer
+?>

@@ -20,29 +20,37 @@
                         <!-- Link Home-->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#">
+                                href="<?php echo base_url('admin') ?>">
                                 <i class="bi bi-house-fill"></i>
                                 Home Admin
                             </a>
                         </li>
 
-                        <!-- Link Cidades-->
+                        <!-- Link Categorias-->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="<?php echo base_url('cidades') ?>">
+                                href="<?php echo base_url('categorias') ?>">
                                 <i class="bi bi-basket"></i>
-                                Cidades
+                                Categorias
                             </a>
                         </li>
-
+                        
+                        <!-- Link Usuarios-->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="<?php echo base_url('usuarios') ?>">
+                                    <i class="bi bi-person"></i>
+                                    Usuarios
+                                </a>
+                            </li>
                         
                     
                     </ul>
 
                     <div class="d-flex">
-                        <a class="btn btn-outline-primary me-2" href="<?php echo base_url('login') ?>">
+                        <a class="btn btn-outline-primary me-2" href="<?php echo base_url('login/logout') ?>">
                             <i class="bi bi-person-circle"></i>
-                            Área do cliente
+                            Sair
                         </a>
                     </div>
                 </div>

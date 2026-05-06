@@ -4,8 +4,11 @@
 ob_start(); // <- Inicia o buffer de saída
 session_start(); // <- Isso é essencial para usar $_SESSION
 
-
-$nivel = NULL;
+if(isset($_SESSION['usuario_logado'])) {
+    $nivel = $_SESSION['usuario_logado']->usuarios_nivel;
+} else {
+    $nivel = NULL;
+}
 
 include_once 'Config/Helpers.php';
 include_once 'Autoloader.php';

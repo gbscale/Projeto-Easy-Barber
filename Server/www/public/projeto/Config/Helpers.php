@@ -1,9 +1,9 @@
 <?php
 
 function accessNavigate($nivel=Null){
-    if($nivel == 1){
+    if($nivel == 2){
         include('Views/templates/nav_user.php');
-    }else if($nivel == 2){
+    }else if($nivel == 1){
         include('Views/templates/nav_admin.php');
     }else{
         include('Views/templates/nav.php');

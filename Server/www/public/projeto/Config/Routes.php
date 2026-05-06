@@ -36,5 +36,16 @@ return [
     '/projeto/usuarios/save' => ['Usuarios', 'save'],
     '/projeto/usuarios/edit_save' => ['Usuarios', 'edit_save'],
     '/projeto/usuarios/search' => ['Usuarios', 'search'],
+
+    '/projeto/login' => ['Login', 'index'],
+    '/projeto/login/index' => ['Login', 'index'],
+    '/projeto/login/auth' => ['Login', 'auth'],
+    '/projeto/login/logout' => ['Login', 'logout'],
+
+    '/projeto/admin' => ['Admin', 'index'],
+    '/projeto/admin/index' => ['Admin', 'index'],
+    
+    '/projeto/user' => ['User', 'index'],
+    '/projeto/user/index' => ['User', 'index'],
 ];
 
